@@ -68,7 +68,7 @@ void display(List *list) {
 
 
     printf("_______________________________________________________________________________________________________________________________________________________________________________________________________________\n");
-    printf("Id |Game\t\t|  Chapter\t\t  |  Developer\t\t    |Release date |Publishers average rating|Gamers average rating|Both average rating|Rate of first Publisher|Rate of second Publisher|\n");
+    printf("Id |Game\t\t|  Chapter\t\t  |  Developer\t\t    |Release date |Publishers average rating|Gamers average rating|Both average rating|Rate of first Publisher|Rate of first Publisher|\n");
     printf("_______________________________________________________________________________________________________________________________________________________________________________________________________________\n");
     while (current != NULL) {
         printf("%-3d|%-20s|%-25s|%-25s|%d.%d.%d\t  |%-25lf|%-21d|%-19lf|%-23d|%-23d|\n", current->id,

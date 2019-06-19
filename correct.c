@@ -77,7 +77,7 @@ void correctDate(List *list)
     int kok;
     while (current != NULL)
     {
-        printf("%d)%s\n", current->id, current->date[0]);
+        printf("%d)%d\n", current->id, current->date[0]);
         current = (GameDev *) current->next;
     }
     printf("Choose element by it ID:");
@@ -99,7 +99,7 @@ void correctMonth(List *list)
     int kok;
     while (current != NULL)
     {
-        printf("%d)%s\n", current->id, current->date[1]);
+        printf("%d)%d\n", current->id, current->date[1]);
         current = (GameDev *) current->next;
     }
     printf("Choose element by it ID:");
@@ -121,7 +121,7 @@ void correctYear(List *list)
     int kok;
     while (current != NULL)
     {
-        printf("%d)%s\n", current->id, current->date[2]);
+        printf("%d)%d\n", current->id, current->date[2]);
         current = (GameDev *) current->next;
     }
     printf("Choose element by it ID:");
@@ -131,7 +131,7 @@ void correctYear(List *list)
     {
         if (current->id == kok)
         {
-            current->date[3] = enterInt("Write new year:");
+            current->date[2] = enterInt("Write new year:");
         }
         current = (GameDev *) current->next;
     }
@@ -143,7 +143,7 @@ void correctGamers(List *list)
     int kok;
     while (current != NULL)
     {
-        printf("%d)%s\n", current->id, current->Gamersrate);
+        printf("%d)%d\n", current->id, current->Gamersrate);
         current = (GameDev *) current->next;
     }
     printf("Choose element by it ID:");
@@ -166,7 +166,7 @@ void correctPublisher1(List *list)
     int kok;
     while (current != NULL)
     {
-        printf("%d)%s\n", current->id, current->Publisher1);
+        printf("%d)%d\n", current->id, current->Publisher1);
         current = (GameDev *) current->next;
     }
     printf("Choose element by it ID:");
@@ -190,7 +190,7 @@ void correctPublisher2(List *list)
     int kok;
     while (current != NULL)
     {
-        printf("%d)%s\n", current->id, current->Publisher2);
+        printf("%d)%d\n", current->id, current->Publisher2);
         current = (GameDev *) current->next;
     }
     printf("Choose element by it ID:");
